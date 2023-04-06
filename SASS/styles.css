@@ -25,9 +25,11 @@ header {
 
 .section {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   flex-grow: 1;
-  margin: 10px 50px;
+  margin: 10px auto;
+  max-width: 100%;
 }
 
 .section__navlateral {
