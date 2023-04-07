@@ -65,3 +65,224 @@ header{
     margin: 0px;
     padding: 50px; 
  }
+
+ /*******LUIS******/
+ .section__main__contenedor{
+   display: flex;
+}
+
+.section__main__contenedor__title{
+  background-color: #3b49e0;
+  border-radius: .3rem;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+}
+
+.section__main__contenedor__title__svg {
+  display: flex;
+  justify-content: end;
+  margin-right: -20px;
+
+}
+.section__main__contenedor__title__svg svg{
+   fill: #fff;
+   height: auto;
+   margin: 0;
+   padding: 0;
+   width: 20px;
+  
+}
+
+.section__main__contenedor__title img{
+  border: thin solid blue;
+  margin: 0;
+  padding: 0;
+}
+
+.section__main__contenedor__title h1{
+   color: white;
+  font-size: 2rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  
+}
+
+.section__main__contenedor__title small{
+  color: white;
+  text-transform: uppercase;
+}
+
+.section__main__contenedor_a a{
+   background-color: #5d6de6;
+   border-radius: 0.2rem ;
+   color: #fff;
+   font-weight: bold;
+   padding: 1rem;
+   margin: 15px 0;
+   text-decoration: none;
+   opacity: 0.9;
+   display: block;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+ 
+}
+.section__main__contenedor_a a p{
+   margin: 0;
+   padding: 0;
+}
+
+.section__main__articles{
+  display: flex;
+  background-color: #e5e5e5;
+  gap:20px;
+  padding: 12px 0;
+}
+.section__main__articles p:nth-child(1){
+  font-weight: bold;
+  margin-left: 10px;
+ 
+}
+.section__main__img-content{
+  background-image: url("https://placeimg.com/600/250/people");
+  background-repeat: no-repeat;
+  border-radius: 0.5rem 0.5rem 0 0;
+  min-height: 280px;
+}
+
+.section__main__radius{ 
+  display: flex;
+}
+.section__main__radius img{
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+}
+
+.section__main__radius div{
+  
+  flex-direction: column;
+ 
+}
+
+.section__main__radius div h5,p{
+  margin: 0 8px;
+  padding:0 2px;
+}
+.section__main__radius div p{
+  font-size: 0.6rem;
+  margin-left: 10px;
+}
+
+.section__main__enlaces{
+padding-left: 50px;
+margin-top: 0;
+
+}
+.section__main__enlaces h2{
+  margin-top: 0;
+}
+.section__main__enlaces div{
+  display: flex;
+  gap: 8px;
+  
+}
+.section__main__enlaces div a{
+  color: black;
+  text-decoration: none;
+  font-size: 0.8rem;
+  
+}
+.section__main__enlaces div a:nth-child(1)::first-letter{
+  color:black;
+}
+.section__main__enlaces div a:nth-child(2)::first-letter{
+  color:blue;
+}
+
+.section__main__enlaces div a:nth-child(3)::first-letter{
+  color:yellow;
+}
+.section__main__enlaces div a:nth-child(4)::first-letter{
+  color:green;
+}
+
+.section__main__enlaces__icons{
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+}
+.section__main__enlaces__icons p{
+  margin: 0;
+ padding: 25px 0;
+ font-size: 13px;
+}
+.section__main__enlaces__icons p:nth-child(6){
+  padding-top: 28px;
+}
+.section__main__enlaces__icons__comments{
+  display: flex;
+  align-items:  center;
+
+}
+
+.section__main__enlaces__icons__img p{
+  margin-left: 45px;
+  font-size: 0.8rem;
+  padding-top: 22px;
+}
+.section__main__enlaces__icons__img img{
+  width: 15px;
+  height: 15px;
+  margin-top: 22px;
+  
+ 
+}
+.section__main__enlaces__publicacion{
+  background-color: #f1efef;
+  border-radius: 0.5rem;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section__main__enlaces__publicacion__redonde{
+  display: flex;
+  align-items:start;
+}
+.section__main__enlaces__publicacion__redonde div h5,p{
+  margin-bottom: 0;
+  margin-left: 4px;
+  margin-top: 0;
+}
+.section__main__enlaces__publicacion__redonde div h5{
+  font-size: 1rem;
+}
+.section__main__enlaces__publicacion__redonde> div> h6{
+  font-size: 0.7rem;
+  padding: 5px 0 10px 5px;
+  margin: 0;
+}
+.section__main__enlaces__publicacion__redonde img{
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+}
+.section__main__enlaces__publicacion__comentario{
+  padding-left: 42px;
+}
+.section__main__enlaces__publicacion> article p{
+  line-height: 1.5rem;
+}
+.section__main__enlaces__publicacion article p:nth-child(5){
+  margin-bottom: 10px;
+ margin-top: 25px;
+}
+
+/*******FIN LUIS******/
