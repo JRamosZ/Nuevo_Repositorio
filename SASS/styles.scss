@@ -2,7 +2,6 @@
 *{
     box-sizing: border-box;
 }
-
 html,
 body
 {
@@ -13,22 +12,16 @@ height: 100%;
 margin:0px;
 padding:0px;
 width: 100%;
-
 }
-
 body{
     display: flex;
     flex-direction: column;
 }
-
-
 header{
     background-color: white;
     padding: 10px;
  }
-
-
- .section{
+.section{
     display:flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -37,14 +30,165 @@ header{
     max-width: 100%;
  }
 
-
- .section__navlateral{
-    flex-basis: 15%;
-    flex-direction: column;
- }
- 
-
- .section__main{
+/*section Diego*/
+.section__navlateral{
+   display: flex;
+   flex-basis: 15%;
+   flex-direction: column;
+}
+.section__navlateral_section1{
+   align-items: center;
+   display: grid;
+   gap: 10px;
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.section__navlateral_section1 a{
+   align-items: center;
+   display: flex;
+   font-family: Arial, Helvetica, sans-serif;
+   gap: 20px;
+}
+.section__navlateral_section1 img{
+   width: 30px;
+}
+.section__navlateral_section1 a:hover{
+   background-color: rgb(236, 236, 254);
+   border-radius: 7px;
+   color: blue ;
+   cursor: pointer;
+   text-decoration-line: underline;
+}
+.other{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 1.6rem;
+   font-weight:bold;
+}
+.section__navlateral_section2{
+   gap: 10px;
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+   display: grid;
+}
+.section__navlateral_section2 img{
+   width: 30px;
+}
+.section__navlateral_section2 a{
+   align-items: center;
+   display: flex;
+   font-family: Arial, Helvetica, sans-serif;
+   gap: 20px;
+}
+.section__navlateral_section2 a:hover{
+   background-color: rgb(236, 236, 254);
+   border-radius: 7px;
+   color: blue ;
+   cursor: pointer;
+   text-decoration-line: underline;
+}
+.section__navlateral_networks{
+   align-items: center;
+   display: flex;
+   justify-items: center;
+   padding-top: 60px;
+}
+.section__navlateral_networks a:hover{
+   cursor: pointer;
+   background-color: rgb(228, 228, 249);
+   border-radius: 7px;
+}
+.section__navlateral_networks img{
+   padding-right: 15px;
+   width: 50px;
+}
+.section__navlateral_tag {
+   align-items: center;
+   display: flex;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 1.6rem;
+   font-weight:bold;
+   justify-content: space-between;
+}
+.section__navlateral_tag a:hover{
+   background-color: rgb(228, 228, 249);
+   border-radius: 7px;
+   cursor: pointer;
+}
+.section__navlateral_sponsor_title1{
+   background-color: rgb(239, 242, 242);
+   border: 1px solid rgb(224, 224, 224);
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   height: 380px;
+   padding-left: 20px;
+   margin-top: 200px;
+   width: 300px;
+}
+.section__navlateral_sponsor_title1 p:nth-of-type(1){
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.section__navlateral_sponsor_title1 p:nth-of-type(2){
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+}
+.section__navlateral_sponsor_title1 p:nth-of-type(3){
+   font-size: 25px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+}
+.section__navlateral_sponsor_title1 a{
+   color: blue;
+   font-size: 22px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   text-decoration: underline;
+}
+.section__navlateral_sponsor_title1 a:hover{
+   color: rgb(4, 4, 171);
+   cursor: pointer;
+}
+.section__navlateral_sponsor_title2{
+   border: 1px solid rgb(224, 224, 224);
+   background-color: rgb(239, 242, 242);
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   height: 380px;
+   margin-top: 30px;
+   padding-left: 20px;
+   padding-right: 20px;
+   width: 300px;
+}
+.section__navlateral_sponsor_title2 p:nth-of-type(1){
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 20px;
+}
+.section__navlateral_sponsor_title2 img{
+   border-radius: 10px;
+   padding: 0;
+   width: 260px;
+}
+.section__navlateral_sponsor_title2 p:nth-of-type(2){
+   font-size: 25px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+}
+.section__navlateral_sponsor_title2 a{
+   color: blue;
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   text-decoration: underline;
+}
+.section__navlateral_sponsor_title2 a:hover{
+   color: rgb(4, 4, 171);
+   cursor: pointer;
+}
+/*finish Diego*/
+.section__main{
     background-color: white;
     flex-basis: 40%;
     flex-grow: 1;
@@ -52,15 +196,11 @@ header{
     margin-right: 10px;
     width: 500px;
  }
-
-
- .section__aside{
+.section__aside{
     background-color: white;
     flex-basis: 30%;
  }
-
-
- footer{
+footer{
     background-color: #e5e5e5;
     margin: 0px;
     padding: 50px; 
