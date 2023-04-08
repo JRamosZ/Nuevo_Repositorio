@@ -235,4 +235,58 @@ footer {
   background-color: #e5e5e5;
   margin: 0px;
   padding: 50px;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*responsive Diego*/
+@media (max-width: 767px) {
+  .section__navlateral {
+    display: none;
+  }
+  .title_responsive {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding-left: 30px;
+  }
+  .section__navlateral_section1 {
+    padding-left: 30px;
+  }
+  .section__navlateral_section1 a {
+    font-size: 0.9rem;
+  }
+  .section__navlateral_section1 img {
+    width: 22px;
+  }
+  .other {
+    font-size: 1.3rem;
+  }
+  .section__navlateral_section2 {
+    padding-left: 30px;
+  }
+  .section__navlateral_section2 a {
+    font-size: 0.9rem;
+  }
+  .section__navlateral_section2 img {
+    width: 22px;
+  }
+  .section__navlateral_networks {
+    justify-content: center;
+    padding-left: 19px;
+    padding-top: 40px;
+    margin-bottom: 100px;
+  }
+  .section__navlateral_networks img {
+    padding-right: 15px;
+    width: 36px;
+  }
+  .section__navlateral_tag {
+    display: none;
+  }
+  .section__navlateral_sponsor_title1 {
+    display: none;
+  }
+  .section__navlateral_sponsor_title2 {
+    display: none;
+  }
+}
+/*responsive Diego*//*# sourceMappingURL=styles.css.map */
