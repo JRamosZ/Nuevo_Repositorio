@@ -52,11 +52,11 @@ body{
    flex-direction: column;
 }
 
-.section__navlateral2{
-   display: flex;
-   flex-basis: 5%;
-   flex-direction: column;
-}
+// .section__navlateral2{
+//    display: flex;
+//    flex-basis: 5%;
+//    flex-direction: column;
+// }
 
 /*section Diego*/
 .title_responsive{
@@ -931,6 +931,7 @@ hr{
   .section__aside2{
     flex-basis: 90%;
     max-width: 918px;
+    margin: 0 auto;
 }
 }
 @media screen and (max-width: 768px){
@@ -939,8 +940,55 @@ hr{
     max-width: 768px;
 }
 }
-// FINAL ASIDE
+// FINAL ASIDE 2
 
+// INICIO NAV LATERAL 2 
+.section__navlateral2{
+   flex-basis: 5%;
+}
+.section__navlateral2__container{
+   display: flex;
+   position: fixed;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   max-width: 40px;
+}
+.section__navlateral2__container a{
+   flex-basis: 100%;
+   text-decoration: none;
+   margin: 10px auto;
+   text-align: center;
+   
+}
+.section__navlateral2__container a span{
+   color:#555555;
+   margin: 0 auto;
+   padding: 0;
+   padding: 5px;
+}
+.section__navlateral2__container a .heart:hover{
+   color:red;
+}
+.section__navlateral2__container a .mode_comment:hover{
+   color:orange;
+}
+.section__navlateral2__container a .bookmark:hover{
+   color:purple;
+}
+.section__navlateral2__container a .more_horiz:hover{
+   background: #96969630;
+   border-radius: 50%;
+}
+
+.section__navlateral2__container a p{
+   font-size: .9rem;
+   color:#555555;
+   padding: 0;
+   margin: 5px auto;
+}
+// INICIO NAV LATERAL 2 
 // MAIN ARTICLE
 
 .section__main21 {
