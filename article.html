@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev To_Home</title>
     <link rel="stylesheet" href="SASS/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <header>
@@ -13,52 +14,8 @@
     </header>
 <section class="section">
     <nav class="section__navlateral">
-        <p class="title_responsive">DEV Community</p>
-            <div class="section__navlateral_section1">
-                <a><img src="/img_navlateral/home.png"alt="">Home</a>
-                <a><img src="/img_navlateral/list.png" alt="">Reading</a>
-                <a><img src="/img_navlateral/listing.png" alt="">Listings</a>
-                <a><img src="/img_navlateral/podcasts.png" alt="">Podcasts</a>
-                <a><img src="/img_navlateral/video.png" alt="">Videos</a>
-                <a><img src="/img_navlateral/tags.png" alt="">Tags</a>
-                <a><img src="/img_navlateral/faq.png" alt="">FAQ</a>
-                <a><img src="/img_navlateral/shop.png" alt="">Forem Shop</a>
-                <a><img src="/img_navlateral/sponsors.png" alt="">Sponsors</a>
-                <a><img src="/img_navlateral/about.png" alt="">About</a>
-                <a><img src="/img_navlateral/contact.png" alt="">Contact</a>
-                <a><img src="/img_navlateral/guies.png" alt="">Guides</a>
-                <a><img src="/img_navlateral/software.png" alt="">Software comparisons</a>
-            </div>
-            <h1 class="other">Other</h1>
-            <div class="section__navlateral_section2">
-                <a><img src="/img_navlateral/conduct.png"alt="">Code of Conduct</a>
-                <a><img src="/img_navlateral/policy.png"alt="">Privacy Policy</a>
-                <a><img src="/img_navlateral/terms.png"alt="">Terms of use</a>
-            </div>
-            <div class="section__navlateral_networks">
-                <a><img src="/img_navlateral/twi.png"alt=""></a>
-                <a><img src="/img_navlateral/face.png"alt=""></a>
-                <a><img src="/img_navlateral/git.png"alt=""></a>
-                <a><img src="/img_navlateral/gram.png"alt=""></a>
-                <a><img src="/img_navlateral/twich.png"alt=""></a>
-                <a><img src="/img_navlateral/masto.png"alt=""></a>
-            </div>
-            <div class="section__navlateral_tag">
-                <p>My tags</p>
-                <a><img src="/img_navlateral/polig.png" alt=""></a>
-            </div>
-            <div class="section__navlateral_sponsor_title1">
-                    <p>DEV Community</p>
-                    <p>Nearly 700 developers have contributed to the Forem codebase that powers DEV and other communities. 🤯</p>
-                    <p>Thank you!</p>
-                    <a>👉 Forem on GitHub 👈</a>
-            </div>
-            <div class="section__navlateral_sponsor_title2">
-                <p>DEV Community</p>
-                <div><img src="/img_navlateral/1.png" alt=""></div>
-                <p>The Forem Shop is Here!</p>
-                <a>>> Shop Forem, DEV, and CodeNewbie merch</a>
-            </div>
+        <h2>NAV LATERAL</h2>
+        <img src="https://placeimg.com/300/300/people" alt="">
     </nav>
     <main class="section__main">
         <article class="section__main__contenedor">
@@ -149,10 +106,56 @@
         </article>
     </main>
     <aside class="section__aside">
-        <h2>ASIDE</h2>
-        <img src="https://placeimg.com/400/400/people" alt="">
+        <div class="section__aside__card1">
+            <a href="#" class="section__aside__card1__anchor1"><img src="https://code.google.com/images/developers.png"><h3>The DEV Team</h3></a>
+            <a href="#" class="section__aside__card1__anchor2">Follow</a>
+            <p>The hardworking team behind DEV ❤️</p>
+            <p>Want to contribute to open source and help make the DEV community stronger?
+            The code that powers DEV is called <span>Forem</span> and is freely available on GitHub.
+            You're welcome to jump in!</p>
+            <a href="#" class="section__aside__card1__anchor3">Contribute to Forem</a>
+        </div>
+        <div class="section__aside__card2">
+            <h3>More from <a href="#" class="section__aside__card2__anchor1">The DEV Team</a></h3>
+            <a href="#" class="section__aside__card2__anchor2">
+                <p class="section__aside__card2__paragraph1">Join the WeCoded Virtual Meetup 🌟</p>
+                <p class="section__aside__card2__paragraph2">#wecoded&nbsp;&nbsp;#meta</p>
+            </a>
+            <a href="#" class="section__aside__card2__anchor3">
+                <p class="section__aside__card2__paragraph1">Join us for #WeCoded 2023!</p>
+                <p class="section__aside__card2__paragraph2">#wecoded&nbsp;&nbsp;#meta</p>
+            </a>
+            <a href="#" class="section__aside__card2__anchor4">
+                <p class="section__aside__card2__paragraph1">Join the WeCoded Virtual Meetup</p>
+                <p class="section__aside__card2__paragraph2">#meta&nbsp;&nbsp;#forem</p>
+            </a>
+        </div>
+        <div class="section__aside__card3">
+            <div class="section__aside__card3__top">
+                <div class="section__aside__card3__top__right">
+                    <img src="https://code.google.com/images/developers.png">
+                    <h5>The DEV Team</h5>
+                </div>
+                <input type="checkbox" id="modal__input">
+                <label for="modal__input"><span class="material-symbols-outlined">more_horiz</span></label>
+                    <div class="section__aside__card3__top__modal">
+                        <div class="section__aside__card3__top__modal__container">
+                            <a href="#"><span class="material-symbols-outlined">error</span>What's a billboard?</a>
+                            <a href="#"><span class="material-symbols-outlined">settings</span>Manage Preferences</a>
+                            <div></div>
+                            <a href="#"><span class="material-symbols-outlined">flag</span>Report billboard</a>
+                        </div>
+                    </div>
+            </div>
+            <a href="#" class="section__aside__card3__anchor1"><img src="https://www.talentia-software.com/wp-content/uploads/2020/05/Featured-image-Corp-12.png"></a>
+            <h3>Did you Know? DEV relies on open source code!</h3>
+            <p class="section__aside__card3__paragraph1">Yes, that's correct. The code behind everything is <span>Forem</span>, which you can find on <a href="https://github.com" target="_blank">GitHub</a>. DEV is just one instance of Forem.</p>
+            <p class="section__aside__card3__paragraph2">Open source is the future of social media.</p>
+        </div>
     </aside>
 </section>
+
 <footer>FOOTER</footer>
+
 </body>
 </html>
