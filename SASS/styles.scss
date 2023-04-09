@@ -123,6 +123,7 @@ header{
    border-radius: 10px;
    display: flex;
    flex-direction: column;
+   gap: 40px;
    height: 380px;
    padding-left: 20px;
    margin-top: 200px;
@@ -131,6 +132,7 @@ header{
 .section__navlateral_sponsor_title1 p:nth-of-type(1){
    font-size: 20px;
    font-family: Arial, Helvetica, sans-serif;
+   padding-top: 15px;
 }
 .section__navlateral_sponsor_title1 p:nth-of-type(2){
    font-size: 20px;
@@ -159,6 +161,7 @@ header{
    border-radius: 10px;
    display: flex;
    flex-direction: column;
+   gap: 40px;
    height: 380px;
    margin-top: 30px;
    padding-left: 20px;
@@ -168,6 +171,7 @@ header{
 .section__navlateral_sponsor_title2 p:nth-of-type(1){
    font-family: Arial, Helvetica, sans-serif;
    font-size: 20px;
+   padding-top: 15px;
 }
 .section__navlateral_sponsor_title2 img{
    border-radius: 10px;
