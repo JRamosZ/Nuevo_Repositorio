@@ -18,93 +18,264 @@
         <img src="https://placeimg.com/300/300/people" alt="">
     </nav>
     <main class="section__main">
-        <article class="section__main__contenedor">
-            <article class="section__main__contenedor__title">
-                <div class="section__main__contenedor__title__svg">
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"/></svg>
+        <article class="section__main__article">
+            <img class="section__main__article__topImage" src="https://res.cloudinary.com/practicaldev/image/fetch/s---yvU0ECp--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/u07jdlpvzftyckubs52z.png" alt="Top Image">
+            <div class="section__main__article__content">
+                <div class="author">
+                    <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--b_RBieoH--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/530414/941751d8-06b8-41bd-9de9-6ea056b7199f.png" alt="Profile Pic">
+                    <div>
+                        <a href="">Tapajyoti Bose</a>
+                        <p>Posted on Apr 1</p>
+                    </div>
                 </div>
-                <img src="img/dev.png" alt="">
-                <h1>
-                   You're now a part of the community!.
-                </h1>
-                <small>Lorem ipsum dolor sit.</small>
-                <div class="section__main__contenedor_a">
-                    <a href="#">😊 Lorem ipsum dolor sit amet <p>›</p></a>
-                    <a href="#">✍🏾 Lorem ipsum dolor sit amet <p>›</p></a>
-                    <a href="#">💅 Lorem ipsum dolor sit amet <p>›</p></a>
+                <div class="reactions">
+                    <span>💖 131</span>
+                    <span>🦄 10</span>
+                    <span>🤯 8</span>
+                    <span>🙌 7</span>
+                    <span>🔥 9</span>
                 </div>
-            </article>   
-        </article>
-        <article class="section__main__articles">
-            <p>Relevant</p>
-            <p> Lastest</p>
-            <p>Top</p>
-        </article>
-        <article class="section__main__img-content">
+                <div class="title">
+                    <h2>3 Tricks to take the Performance of your Website to the Moon 🚀🌙</h2>
+                    <div class="tags">
+                        <a href=""> <span>#</span>webdev</a>
+                        <a href=""> <span>#</span>javascript</a>
+                        <a href=""> <span>#</span>html</a>
+                        <a href=""> <span>#</span>css</a>
+                    </div>
 
-        </article>
-        <article class="section__main__radius">
-            <img src="img/luis.jpg" alt="Foto redondeada">
-            <div>
-                
-                <h5> Luis Renteria</h5>
-                <p> Abr 4 (1 day april)</p>
+                    <div class="text">
+                        <p>Are users complaining about your slow website? This article shares <b>3 tricks to take the performance of your website to the moon</b>. Let's get started!
+                        <br><br>
+                        <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--Ayr_fpO2--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/pv33dize2h1pb1liypze.gif" alt="Lets Begin Gif">
+                        <h3>1. Fetch only relevant resources</h3>
+                        Did you know you can fetch only the <b>CSS</b> files relevant to the current device?<br><br>
+                        The <span class="backgrounded_text">link</span> tag has a <span class="backgrounded_text">media</span> attribute that can be used to specify the <b>media query</b> for which the <b>stylesheet</b> is intended.
+                        <div class="code_box">
+                        <xmp>
+<link
+    rel="stylesheet"
+    href="mobile.css"
+    media="screen and (max-width: 600px)"
+/>
+                        </xmp>
+                        </div>
+                        This will fetch the <span class="backgrounded_text">mobile.css</span> file only if the device width is less than <span class="backgrounded_text">600px</span>.
+                        <br><br>
+                        A <b>live demo</b> of this can be found in <a href="https://www.w3schools.com/">w3schools</a>.
+                        <h3>2. Minify your code</h3>
+                        <div class="first_parragraph">
+                            <div class="border"></div>
+                            <div>Minification is the process of removing unnecessary or redundant data without affecting how a resource is processed by the browser. Minification can include the removal of code comments, white space, and unused code, as well as the shortening of variable and function names.</div>
+                        </div>
+                        <br><br>
+                        Regardless of the <b>build tool</b> (<b>Webpack, Vite, Snowpack,</b> etc) you use, it would have a <b>minification</b> option. For example, in <b>webpack</b>, you can use the <a href="https://webpack.js.org/plugins/terser-webpack-plugin/">TerserPlugin</a> to <b>minify your code</b>.
+                        <h3>3. Pre-fetch resources</h3>
+                        <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--O1nytyK4--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/mmdkhwd8ux1imkxtbq7r.jpg" alt="Resources Diagram">
+                        <br>
+                        You can <b>preload images, CSS, JS,</b> and even entire pages by using the <span class="backgrounded_text">link</span> tag.
+                        <div class="code_box">
+                        <xmp>
+<link rel="preload" as="image" href="image.png" />
+                        </xmp>
+                        </div>
+                        You can even use <a href="https://github.com/GoogleChromeLabs/quicklink">quicklink</a> or <a href="https://github.com/guess-js/guess">guess</a> to <b>optimally prefetch resources</b>.
+                        <br><br>
+                        <b>Quicklink</b> is a library that prefetches links in the viewport, using the <b>Intersection Observer API</b>, & makes them load faster, whereas <b>Guess</b> is a library that uses <b>Machine Learning</b> to predict which page the user is most likely to visit next.
+                        <br><br>
+                        <b>That's all folks!</b> 🎉
+                        </p>
+                    </div>
+                </div>
+                <div class="comments">
+                    <div class="comments__head">
+                        <div class="comments__head__title">
+                            <h4>Top Comments (14)</h4>
+                            <button class="b1">
+                                <img src="https://cdn-icons-png.flaticon.com/512/84/84263.png" alt="">
+                            </button>
+                        </div>
+                        <div class="comments__subscribe">
+                            <button class="b2">Subscribe</button>
+                        </div>
+                    </div>
+
+                    <div class="comments__input">
+                        <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--Ybd73gCT--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1060381/b0b57f50-793a-4576-ac26-69d63a1cec2d.jpeg" alt="User Profile Picture">
+                        <textarea placeholder="Add to the discussion" rows="4" cols="45"></textarea>
+                    </div>
+
+                    <div class="comments__comment">
+                        <div class="comments__comment__profile">
+                            <button class="b3">
+                                <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--IhWu_FIx--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/450437/2a3854a6-7ced-4167-b0c5-1bcf90e6bb67.jpg" alt="">
+                            </button>
+                            <button class="b4">
+                                <img src="https://cdn-icons-png.flaticon.com/512/84/84263.png" alt="">
+                            </button>
+                        </div>
+                        <div class="comments__comment_text">
+                            <div class="comments__comment_text__box">
+                                <div class="comments__comment_text__head">
+                                    <div class="author">
+                                        <button class="b5">
+                                            <b>Taufik Nurhidayat</b>
+                                        </button>
+                                        <p>~</p>
+                                        <button class="b6">
+                                            Apr 2
+                                        </button>
+                                    </div>
+                                    <div class="button">
+                                        <button class="b7">
+                                            ...
+                                        </button>
+                                    </div>
+                                </div>
+                            
+                                <div>
+                                    <p>Also you can compress image for web</p>
+                                </div>
+                            </div>
+                            <div class="comment__reactions">
+                                <button><p><img src="https://cdn-icons-png.flaticon.com/512/535/535285.png" alt=""> 6 likes</p></button>
+                                <button><p><img src="https://cdn-icons-png.flaticon.com/512/2462/2462719.png" alt=""> Reply</p></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comments__comment">
+                        <div class="comments__comment__profile">
+                            <button class="b3">
+                                <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--b_RBieoH--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/530414/941751d8-06b8-41bd-9de9-6ea056b7199f.png" alt="">
+                            </button>
+                            <button class="b4">
+                                <img src="https://cdn-icons-png.flaticon.com/512/84/84263.png" alt="">
+                            </button>
+                        </div>
+                        <div class="comments__comment_text">
+                            <div class="comments__comment_text__box">
+                                <div class="comments__comment_text__head">
+                                    <div class="author">
+                                        <button class="b5">
+                                            <b>Tapajyoti Bose</b>
+                                        </button>
+                                        <p>~</p>
+                                        <button class="b6">
+                                            Apr 3
+                                        </button>
+                                    </div>
+                                    <div class="button">
+                                        <button class="b7">
+                                            ...
+                                        </button>
+                                    </div>
+                                </div>
+                            
+                                <div>
+                                    <p>Yeah that's a really obvious one. I can't believe I missed out this one.
+                                    <br><br>
+                                    Thanks a lot for pointing out :)</p>
+                                </div>
+                            </div>
+                            <div class="comment__reactions">
+                                <button><p><img src="https://cdn-icons-png.flaticon.com/512/535/535285.png" alt=""> 1 like</p></button>
+                                <button><p><img src="https://cdn-icons-png.flaticon.com/512/2462/2462719.png" alt=""> Reply</p></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comments__comment">
+                        <div class="comments__comment__profile">
+                            <button class="b3">
+                                <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--6pOp2smR--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/2991/1267316.jpeg" alt="">
+                            </button>
+                            <button class="b4">
+                                <img src="https://cdn-icons-png.flaticon.com/512/84/84263.png" alt="">
+                            </button>
+                        </div>
+                        <div class="comments__comment_text">
+                            <div class="comments__comment_text__box">
+                                <div class="comments__comment_text__head">
+                                    <div class="author">
+                                        <button class="b5">
+                                            <b>Lars Rye Jappesen</b>
+                                        </button>
+                                        <p>~</p>
+                                        <button class="b6">
+                                            Apr 6
+                                        </button>
+                                    </div>
+                                    <div class="button">
+                                        <button class="b7">
+                                            ...
+                                        </button>
+                                    </div>
+                                </div>
+                            
+                                <div>
+                                    <p>Use image service, they compress for each browser. Avif for all and webp for Explorer</p>
+                                </div>
+                            </div>
+                            <div class="comment__reactions">
+                                <button><p><img src="https://cdn-icons-png.flaticon.com/512/535/535285.png" alt=""> 2 likes</p></button>
+                                <button><p><img src="https://cdn-icons-png.flaticon.com/512/2462/2462719.png" alt=""> Reply</p></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subsection__footer">
+                    <button>Code of Conduct</button>
+                    <p>~</p>
+                    <button>Report Abuse</button>
+                </div>
             </div>
         </article>
-        <article class="section__main__enlaces">
-            
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
-            <div>
-                <a href="#"><span>#</span>programing</a>
-                <a href="#"><span>#</span>webdev</a>
-                <a href="#"><span>#</span>javascript</a>
-                <a href="#"><span>#</span>frontend</a>
+        
+        <div class="advertisement">
+            <div class="advertisement__header">
+                <p>DEV Community</p>
+                <button>...</button>
             </div>
-            <div class="section__main__enlaces__icons">
-               <div>
+            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--OQ4wxLO7--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_775/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/phgcbdsj99jmuq2q915x.jpg" alt="Ad Image">
+            <h3>We've heard you.</h3>
+            <p>We're working on improving your feed. Add your <a href="">experience level</a> in settings to see content more relevant to you.</p>
+        </div>
 
-                   <p>💖</p>
-                    <p>🦄</p>
-                    <p>🤯</p>
-                    <p>🙌</p>
-                    <p>🔥</p>
-                    <p>17 Reaccions</p>
-                    <p class="section__main__enlaces__icons__comments"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="ac3qw4s3op4ympa46x4kc2gzffvrsqob" class="crayons-icon"><title id="ac3qw4s3op4ympa46x4kc2gzffvrsqob">Comments</title><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>Comments</p>
-               </div> 
-                <div class="section__main__enlaces__icons__img">
-
-                    <p>6 min read</p>
-                    <img class="" src="img/etiqueta.png" alt="Etiqueta">
-                </div>
+        <div class="otherArticles">
+            <h3>Read next</h3>
+            <div class="otherArticles__article">
+                <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--We_HXLWO--/c_imagga_scale,f_auto,fl_progressive,h_100,q_auto,w_100/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/941040/6ff230ff-9ee0-4106-9869-0858b8c5db70.png" alt="a">
+                <a href="">
+                    <div>
+                        <h4>Javascript Object #4</h4>
+                        <p>sams-engine - Apr 5</p>
+                    </div>
+                </a>
             </div>
-        </article>
-        <article class="section__main__enlaces__publicacion">
-            <article class="section__main__enlaces__publicacion__redonde">
-                <img src="img/avatar.jpg" alt="Foto redondeada">
-                <div>            
-                    <h5> Anonimous</h5>
-                    <h6> AGREED</h6>
-                </div>
-            </article>
-            <article class="section__main__enlaces__publicacion__comentario">
 
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat est odio earum aperiam corporis itaque expedita libero voluptatibus dicta, atque quae nobis magni accusantium enim eos iusto placeat et unde ipsam? Deleniti commodi soluta minus repudiandae labore, expedita dignissimos alias hic odit cumque placeat quis culpa, beatae eaque esse maiores! <p> &nbsp;&nbsp;&nbsp;&nbsp;
-    
-                </p>
-    
-                <p>
-                    
-                    Nobis doloremque laborum recusandae libero ipsam provident consequatur ipsum cum asperiores nesciunt pariatur iusto fugiat adipisci eaque nisi consectetur molestias totam nostrum, deserunt fugit vel accusamus dolorum excepturi perferendis. </p>&nbsp;&nbsp;&nbsp;&nbsp;
-                
-                <p>
-                    Iure magnam enim voluptate, voluptas possimus, at suscipit veritatis consequuntur doloribus magni delectus nesciunt animi, accusamus quasi harum rerum laudantium reprehenderit. 
-                </p>
-                <p>See all 3 comments</p>
-            </article>
-        </article>
+            <div class="otherArticles__article">
+                <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--ntuSsIZe--/c_imagga_scale,f_auto,fl_progressive,h_100,q_auto,w_100/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/175071/8d08bcd7-3634-48a4-bb47-bf37f75b3934.jpg" alt="a">
+                <a href="">
+                    <div>
+                        <h4>Angular: The Framework of Past, Present, and Future</h4>
+                        <p>Santosh Yadav - Apr 6</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="otherArticles__article">
+                <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--OsKHr1l_--/c_imagga_scale,f_auto,fl_progressive,h_100,q_auto,w_100/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/698016/a2673c1b-1f51-40ca-98db-77f69cae5158.jpeg" alt="a">
+                <a href="">
+                    <div>
+                        <h4>Complete roadmap to become a pro in MERSN STACK</h4>
+                        <p>Bentil Shadrack - Apr 7</p>
+                    </div>
+                </a>
+            </div>
+        </div>
     </main>
+
+
     <aside class="section__aside">
         <div class="section__aside__card1">
             <a href="#" class="section__aside__card1__anchor1"><img src="https://code.google.com/images/developers.png"><h3>The DEV Team</h3></a>
