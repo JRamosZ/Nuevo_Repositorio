@@ -52,11 +52,9 @@ body{
    flex-direction: column;
 }
 
-// .section__navlateral2{
-//    display: flex;
-//    flex-basis: 5%;
-//    flex-direction: column;
-// }
+.section__navlateral2{
+   flex-basis: 5%;
+}
 
 /*section Diego*/
 .title_responsive{
@@ -943,24 +941,20 @@ hr{
 // FINAL ASIDE 2
 
 // INICIO NAV LATERAL 2 
-.section__navlateral2{
-   flex-basis: 5%;
-}
 .section__navlateral2__container{
-   display: flex;
-   position: fixed;
-   flex-direction: row;
-   justify-content: center;
    align-items: center;
+   display: flex;
+   flex-direction: row;
    flex-wrap: wrap;
+   justify-content: center;
    max-width: 40px;
+   position: fixed;
 }
 .section__navlateral2__container a{
    flex-basis: 100%;
-   text-decoration: none;
    margin: 10px auto;
    text-align: center;
-   
+   text-decoration: none;
 }
 .section__navlateral2__container a span{
    color:#555555;
@@ -983,12 +977,12 @@ hr{
 }
 
 .section__navlateral2__container a p{
-   font-size: .9rem;
    color:#555555;
-   padding: 0;
+   font-size: .9rem;
    margin: 5px auto;
+   padding: 0;
 }
-// INICIO NAV LATERAL 2 
+// FINAL NAV LATERAL 2 
 // MAIN ARTICLE
 
 .section__main21 {
