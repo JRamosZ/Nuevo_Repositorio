@@ -134,10 +134,11 @@ body{
    font-size: 1.2rem;
    font-weight:bold;
    justify-content: space-between;
-   margin-top: 20px;
+   margin-top: 35px;
+   padding: 0 9px 0 9px;
 
    & img {
-      width: 25px;
+      width: 22px;
    }
 }
 .section__navlateral_tag a:hover{
@@ -226,9 +227,12 @@ body{
 
 
 /*responsive Diego*/
- @media (max-width: 767px){
+ @media (max-width: 390px){
    .section__navlateral{
       display: none;
+   }
+   #check:checked ~ .section__navlateral{
+    display: block;
    }
    .title_responsive{
       font-family: Arial, Helvetica, sans-serif;
@@ -277,6 +281,33 @@ body{
       display: none;
    }
     
+}
+@media (max-width: 820px){
+  .section__navlateral_section1{
+    padding-left: 20px;
+  }
+  .other{ 
+    padding-left: 20px;
+  }
+  .section__navlateral_section2{
+    padding-left: 20px;
+  }
+  .section__navlateral_networks{
+    padding-left: 20px;
+  }
+  .section__navlateral_sponsor_title1{
+    margin-left: 11px;
+    width: 280px;
+    
+  }
+  .section__navlateral_sponsor_title2{
+    margin-left: 11px;
+    width: 280px;
+    place-items: center;
+  } 
+  .section__navlateral_sponsor_title2 p:nth-of-type(1){
+    padding-right: 65px;
+  }
 }
 /*responsive Diego*/
 
