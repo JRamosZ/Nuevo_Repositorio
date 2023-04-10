@@ -44,6 +44,7 @@ body{
 .section__aside2{
    flex: 1 1 30%;
    max-width: 350px;
+   overflow: hidden;
  }
  
 .section__navlateral{
@@ -626,9 +627,9 @@ hr{
   }
    
 }
-/******* FIN ASIDE 2******/
+/******* FIN ASIDE 1******/
 
-// INICIO ASIDE
+// INICIO ASIDE 2
 
 .section__aside__card1{
   background: linear-gradient(black 0 30px, #fafafa 30px 100%);  
@@ -927,17 +928,26 @@ hr{
 
 @media screen and (max-width: 1020px){
   .section__aside2{
-    flex-basis: 90%;
-    max-width: 918px;
-    margin: 0 auto;
+    flex-basis: 95%;
+    max-width: 970px;
+    margin-left: 50px;
+}
+}
+@media screen and (max-width: 820px){
+  .section__aside2{
+    flex-basis: 95%;
+    max-width: 770px;
+    margin-left: 50px;
 }
 }
 @media screen and (max-width: 768px){
   .section__aside2{
     flex-basis: 100%;
     max-width: 768px;
+    margin: 0 auto;
 }
 }
+
 // FINAL ASIDE 2
 
 // INICIO NAV LATERAL 2 
@@ -947,7 +957,7 @@ hr{
    flex-direction: row;
    flex-wrap: wrap;
    justify-content: center;
-   max-width: 40px;
+   max-width: 50px;
    position: fixed;
 }
 .section__navlateral2__container a{
@@ -1004,7 +1014,8 @@ hr{
    margin-left: 10px;
    margin-right: 10px;
    padding: 0px;
-   max-width: 500px;
+   max-width: 700px;
+   overflow: hidden;
 
    & .section__main__article {
       background-color: white;
@@ -1430,7 +1441,20 @@ hr{
       }    
    }
 }
-
+@media screen and (max-width: 1020px){
+  .section__main21{
+    flex-basis: 95%;
+    max-width: 970px;
+    margin-left: 50px;
+}
+}
+@media screen and (max-width: 768px){
+  .section__main21{
+    flex-basis: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+}
+}
 // FINAL MAIN ARTICLE
 
 
