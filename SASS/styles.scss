@@ -985,10 +985,10 @@ hr{
 // FINAL NAV LATERAL 2 
 // MEDIAQUERIES NAV LATERAL PAG2//
 
+@media (max-width: 768px) {
   .section {
-    @media (max-width: 768px) {
-      
-  .section__navlateral2__container{
+        
+  .section__navlateral2{
   display: none;
   }
 }
@@ -998,13 +998,13 @@ hr{
 // MAIN ARTICLE
 
 .section__main21 {
-   flex-basis: 55%;
+   flex-basis: 50%;
    flex-grow: 1;
    margin-bottom: 10px;
    margin-left: 10px;
    margin-right: 10px;
    padding: 0px;
-   width: 500px;
+   max-width: 500px;
 
    & .section__main__article {
       background-color: white;
@@ -1445,6 +1445,7 @@ header {
    padding: 8px;
    position: fixed;
    width: 100%;
+   z-index: 2;
  
    nav {
      display: flex;
