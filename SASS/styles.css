@@ -53,6 +53,10 @@ body {
   flex-direction: column;
 }
 
+.section__navlateral2 {
+  flex-basis: 5%;
+}
+
 /*section Diego*/
 .title_responsive {
   display: none;
@@ -1002,25 +1006,21 @@ hr {
     max-width: 768px;
   }
 }
-.section__navlateral2 {
-  flex-basis: 5%;
-}
-
 .section__navlateral2__container {
-  display: flex;
-  position: fixed;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   max-width: 40px;
+  position: fixed;
 }
 
 .section__navlateral2__container a {
   flex-basis: 100%;
-  text-decoration: none;
   margin: 10px auto;
   text-align: center;
+  text-decoration: none;
 }
 
 .section__navlateral2__container a span {
@@ -1048,10 +1048,10 @@ hr {
 }
 
 .section__navlateral2__container a p {
-  font-size: 0.9rem;
   color: #555555;
-  padding: 0;
+  font-size: 0.9rem;
   margin: 5px auto;
+  padding: 0;
 }
 
 .section__main21 {
@@ -1432,70 +1432,60 @@ header nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 15%;
   position: fixed;
   width: 100%;
 }
-header nav .padre {
+header nav .container0 .hamburger {
+  background: transparent;
+  border: 0;
   display: flex;
-  flex-direction: row;
-}
-header nav .hijo_imagendev img {
-  height: 40px;
-  width: 50px;
-}
-header nav .hijo_buscador form {
-  padding: 0px 16px;
-}
-header nav .hijo_buscador form input {
-  height: 40px;
-  width: 400px;
-}
-header nav .hijo_lupita a img {
-  height: 40px;
-  padding-top: 5px;
-  width: 30px;
-}
-header nav .hijo_lupita a img:hover {
-  background-color: rgb(230, 230, 250);
-}
-header nav2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 0 17%;
-  position: fixed;
-  width: 100%;
-}
-header nav2 .padre {
-  display: flex;
-  flex-direction: row;
-}
-header nav2 .hijo_imagendev img {
-  height: 40px;
-  width: 50px;
-}
-header nav2 .hijo_buscador form {
-  padding: 0px 16px;
-}
-header nav2 .hijo_buscador form input {
-  height: 40px;
-  width: 400px;
-}
-header nav2 .hijo_lupita a img {
-  height: 40px;
-  padding-top: 5px;
-  width: 30px;
-}
-header nav2 .hijo_lupita a img:hover {
-  background-color: rgb(230, 230, 250);
-}
-header .madre {
-  display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
+  height: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 35px;
+  margin-top: 0;
+  margin-right: 15px;
 }
-header .madre .create {
+header nav .container0 .hamburger .hamburger__line {
+  background-color: black;
+  height: 2px;
+  width: 100%;
+}
+header nav .container0 .container0__imgdev0 img {
+  height: 40px;
+  width: 50px;
+}
+header nav .container1 {
+  display: flex;
+  flex-direction: row;
+}
+header nav .container1 .container1__imgdev img {
+  height: 40px;
+  width: 50px;
+}
+header nav .container1 .container1__search {
+  padding: 0px 16px;
+}
+header nav .container1 .container1__search input {
+  height: 40px;
+  width: 400px;
+  margin: 0;
+}
+header nav .container1 .container1__lupa a img {
+  height: 40px;
+  padding-top: 5px;
+  width: 30px;
+}
+header nav .container1 .container1__lupa a img:hover {
+  background-color: rgb(230, 230, 250);
+}
+header nav .container2 {
+  display: flex;
+  flex-direction: row;
+}
+header nav .container2 .container2__create {
   border-radius: 10%;
   border: 1px solid rgb(59, 73, 223);
   height: 40px;
@@ -1503,42 +1493,93 @@ header .madre .create {
   text-align: center;
   width: 115px;
 }
-header .madre .create:hover {
+header nav .container2 .container2__create:hover {
   background-color: rgb(59, 73, 223);
 }
-header .madre .create a {
+header nav .container2 .container2__create a {
   color: rgb(59, 73, 223);
   text-decoration: none;
 }
-header .madre .create a:hover {
+header nav .container2 .container2__create a:hover {
   background-color: rgb(59, 73, 223);
   color: white;
   text-decoration: underline;
 }
-header .madre .notificacion {
+header nav .container2 .container2__notify {
   padding-left: 16px;
   padding-top: 10px;
 }
-header .madre .notificacion img {
+header nav .container2 .container2__notify img {
   height: 25px;
   width: 25px;
 }
-header .madre .notificacion img:hover {
+header nav .container2 .container2__notify img:hover {
   background-color: rgb(230, 230, 250);
 }
-header .imgusuario {
+header nav .container2 .container2__userimg {
   padding-left: 16px;
 }
-header .imgusuario a img {
+header nav .container2 .container2__userimg a img {
   border-radius: 50%;
   height: 45px;
   padding: 4px;
   width: 45px;
 }
-header .imgusuario a img:hover {
+header nav .container2 .container2__userimg a img:hover {
+  background-color: rgb(230, 230, 250);
+}
+header nav .container3 {
+  display: flex;
+  flex-direction: row;
+}
+header nav .container3 .container3__lupa a img {
+  height: 40px;
+  padding-top: 5px;
+  width: 30px;
+}
+header nav .container3 .container3__lupa a img:hover {
+  background-color: rgb(230, 230, 250);
+}
+header nav .container3 .container3__notify {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+header nav .container3 .container3__notify img {
+  height: 25px;
+  width: 25px;
+}
+header nav .container3 .container3__notify img:hover {
+  background-color: rgb(230, 230, 250);
+}
+header nav .container3 .container3__userimg a img {
+  border-radius: 50%;
+  height: 45px;
+  padding: 4px;
+  width: 45px;
+}
+header nav .container3 .container3__userimg a img:hover {
   background-color: rgb(230, 230, 250);
 }
 
+@media (min-width: 769px) {
+  header nav .container0 {
+    display: none;
+  }
+  header nav .container3 {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  header nav .container1 {
+    display: none;
+  }
+  header nav .container0 {
+    display: flex;
+  }
+  header nav .container2 {
+    display: none;
+  }
+}
 footer {
   align-items: center;
   background-color: #e5e5e5;
