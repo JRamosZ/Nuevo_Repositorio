@@ -984,8 +984,10 @@ hr{
 }
 // FINAL NAV LATERAL 2 
 // MEDIAQUERIES NAV LATERAL PAG2//
-@media (max-width: 768px) {
+
   .section {
+    @media (max-width: 768px) {
+      
   .section__navlateral2__container{
   display: none;
   }
