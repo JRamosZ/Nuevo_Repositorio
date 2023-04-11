@@ -413,10 +413,10 @@ body {
 }
 
 .section__main__img-content {
-  background-image: url("https://placeimg.com/700/250/people");
-  background-repeat: no-repeat;
+  background-image: url("https://placeimg.com/700/280/people");
   border-radius: 0.5rem 0.5rem 0 0;
   min-height: 280px;
+  margin-bottom: 20px;
 }
 
 .section__main__radius {
@@ -1531,13 +1531,21 @@ header nav .container1 .container1__imgdev img {
 header nav .container1 .container1__search {
   padding: 0px 16px;
 }
-header nav .container1 .container1__search input {
+header nav .container1 .container1__search form {
+  display: flex;
+  position: relative;
+}
+header nav .container1 .container1__search form a {
+  position: absolute;
+  right: 1px;
+}
+header nav .container1 .container1__search form input {
   height: 40px;
   width: 400px;
   margin: 0;
 }
 header nav .container1 .container1__lupa a img {
-  height: 40px;
+  height: 35px;
   padding-top: 5px;
   width: 30px;
 }
@@ -1571,6 +1579,16 @@ header nav .container2 .container2__create a:hover {
 header nav .container2 .container2__notify {
   padding-left: 16px;
   padding-top: 10px;
+  position: relative;
+}
+header nav .container2 .container2__notify p {
+  background-color: red;
+  color: white;
+  position: absolute;
+  border-radius: 50%;
+  padding: 3px;
+  top: -0.4rem;
+  left: 25px;
 }
 header nav .container2 .container2__notify img {
   height: 25px;
@@ -1606,6 +1624,16 @@ header nav .container3 .container3__lupa a img:hover {
 header nav .container3 .container3__notify {
   padding-left: 10px;
   padding-top: 10px;
+  position: relative;
+}
+header nav .container3 .container3__notify p {
+  background-color: red;
+  color: white;
+  position: absolute;
+  border-radius: 50%;
+  padding: 3px;
+  top: -0.4rem;
+  left: 20px;
 }
 header nav .container3 .container3__notify img {
   height: 25px;

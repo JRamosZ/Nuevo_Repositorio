@@ -393,10 +393,10 @@ body{
  
 }
 .section__main__img-content{
-  background-image: url("https://placeimg.com/700/250/people");
-  background-repeat: no-repeat;
+  background-image: url("https://placeimg.com/700/280/people");
   border-radius: 0.5rem 0.5rem 0 0;
   min-height: 280px;
+  margin-bottom: 20px;
 }
 
 .section__main__radius{ 
@@ -1556,6 +1556,13 @@ header {
      }
      .container1__search {
        padding: 0px 16px;
+       form {
+         display:flex;
+        position: relative;
+        a {
+          position: absolute;
+          right: 1px;
+        }
  
        input {
          height: 40px;
@@ -1563,9 +1570,10 @@ header {
          margin: 0;
        }
      }
+    }
      .container1__lupa {
        a img {
-         height: 40px;
+         height: 35px;
          padding-top: 5px;
          width: 30px;
          &:hover {
@@ -1602,6 +1610,17 @@ header {
        .container2__notify {
          padding-left: 16px;
          padding-top: 10px;
+         position: relative;
+         
+         p{
+          background-color: red;
+          color: white;
+          position: absolute;
+          border-radius: 50%;
+          padding: 3px;
+          top: -0.4rem;
+          left: 25px;
+         }
          img {
            height: 25px;
            width: 25px;
@@ -1640,9 +1659,23 @@ header {
        }
  
        .container3__notify {
+
+
          padding-left: 10px;
          padding-top: 10px;
+         position: relative;
+
+         p{
+          background-color: red;
+          color: white;
+          position: absolute;
+          border-radius: 50%;
+          padding: 3px;
+          top: -0.4rem;
+          left: 20px;
+         }
          img {
+
            height: 25px;
            width: 25px;
            &:hover {
